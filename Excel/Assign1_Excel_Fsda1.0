@@ -1,0 +1,30 @@
+Excel-Assignment1:
+
+1.What do you mean by cells in an excel sheet?
+
+Ans: Cells in an excel sheets can contain values of any type(numbers,characters,special symbols,..) and can be represented by using rows(1,2,3....) and columns(A,B,C,...).
+     For Example,if an cell contain value like 9999 in (A,1) here A-represents-column-1 and 1-represents-row-1.
+
+2.How can you restrict someone from copying a cell from your worksheet?
+
+Ans: Using, 
+		Menutab ->Review -> protectsheet -> password. Enforce password for anyone to access the worksheet. 
+
+3.How to move or copy the worksheet into another workbook?  
+
+Ans: Open the workbook1 that contains the data and also open the workbook2 to which the data needs to be copied.Select the data from workbook1 using ctrlc and go to workbook2 
+	and click ctrlv to paste the data.
+
+4.Which key is used as a shortcut for opening a new window document?
+
+Ans: Under the 'View' tab, click New Window. This will open up the same document in a second window.CtrlN when clicked open a new workbook.
+
+5.What are the things that we can notice after opening the Excel interface?
+
+Ans: 1.File  2.Home   3.Insert   4.Page Layout   5.Formula   6.Data   7.Review   8.View   9.Help
+	                
+	Sheet containing rows and columns of rectangular grid called cells. In the lower right we can increase or decrease the page zoom.
+
+6.When to use a relative cell reference in excel?
+
+Ans: when we want to perform a similar operation on multiple cells and the formula must change according to the relative address of column and row.
