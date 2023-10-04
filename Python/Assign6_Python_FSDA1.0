@@ -1,0 +1,96 @@
+1.What are escape characters, and how do you use them?
+
+Ans: In Python strings, the backslash "" is a special character, also called the "escape" character.
+     It is used in representing certain whitespace characters: "\t" is a tab, "\n" is a newline, and "\r" is a carriage return
+
+Input: print("my \name \is")
+
+Output: my name is
+
+2.What do the escape characters n and t stand for?
+
+Ans: n-newline, t-tab
+
+3.What is the way to include backslash characters in a string?
+
+Ans: print('its a back slash \ in a line')
+
+4.The string "Howl's Moving Castle" is a correct value. Why isn&#39;t the single quote character in the word Howl's not escaped a problem?
+
+Ans: The single quote in Howl's is fine because you've used double quotes to mark the beginning and end of the string, 
+     like wise we can use double quotes in with single quotes.
+
+5.How do you write a string of newlines if you don&#39;t want to use the n character?
+
+Ans: 
+print("printing something in new line",end = '\n')
+print("newline")
+
+Output:
+     printing something in new line
+     newline
+
+6.What are the values of the given expressions?
+
+Ans:
+Input:
+     'Hello, world!'[1]
+Output:
+      'e'
+
+Input:
+     'Hello, world!'[0:5]
+Output:     
+     'Hello'
+
+Input:
+     'Hello, world!'[:5]
+Output:     
+     'Hello'
+
+Input:
+     'Hello, world!'[3:]
+Output:     
+     'lo, world!'
+
+7.What are the values of the following expressions?
+
+Ans:
+Input:
+     'Hello'.upper()
+Output:
+     'HELLO'
+
+Input:
+     'Hello'.upper().isupper()
+Output:
+      True
+
+Input:
+     'Hello'.upper().lower()
+ Output:    
+     'hello'
+
+8.What are the values of the following expressions?
+
+Ans:
+Input:
+       'Remember, remember, the fifth of July.'.split()
+Output:    
+      ['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.']
+
+Input:
+       '-'.join('There can only one.'.split())
+Output:     
+       'There-can-only-one.'
+
+9.What are the methods for right-justifying, left-justifying, and centering a string?
+
+Ans: ljust(), rjust(), center()
+
+10.What is the best way to remove whitespace characters from the start or end?
+
+Ans: lstrip(), rstrip()
+
+
+
