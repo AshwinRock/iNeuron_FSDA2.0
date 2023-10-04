@@ -1,0 +1,35 @@
+1.What does the dollar($) sign do?
+
+Ans: An absolute reference in Excel is a cell address with the dollar sign ($) in the row or column coordinates, like $A$1.
+    The dollar sign fixes the reference to a given cell, so that it remains unchanged no matter where the formula moves.
+
+2.How to Change the Reference from Relative to Absolute (or Mixed)?
+
+Ans: Press F4 key once: The cell reference changes from A1 to $A$1 (becomes 'absolute' from 'relative').
+
+3.Explain the order of operations in excel?
+
+Ans: 1.Parentheses  2.Exponents  3.Multiplication  4.Division  5.Addition  6.Subtraction
+
+4.What, according to you, are the top 5 functions in excel and write a basic syntax
+for any of two?
+
+Ans: 1.VLoopup function: =VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+     2.Concatenate function: =CONCATENATE("Hello", " ", "World!")
+     3.Text to Columns
+     4.Remove Duplicates
+     5.Pivot Tables
+
+5.When would you use the subtotal function?
+
+Ans: To exclude filtered or hidden rows when calculating a total on the worksheet.
+
+6.What is the syntax of the vlookup function? Explain the terms in it?
+
+Ans: =VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+      
+      Lookup_value: Select the cell where search values will be entered.
+      Table_array: The table range, including all cells in the table.
+      Col_index_num: The data which is being looked up. The input is the number of the column, counted from the left.
+      Range_lookup: TRUE if numbers (1) or FALSE if text (0).
+
