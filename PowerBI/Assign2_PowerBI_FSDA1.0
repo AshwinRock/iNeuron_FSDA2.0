@@ -1,0 +1,55 @@
+1.Explain the advantages of Natural Queries in PowerBi with an example?
+
+Ans: 1. Simplifying employee access to BI data
+     2. Driving deeper business insights
+     3. Reducing confusion about analytics results
+     4. Applying structure to unstructured data
+
+2.Explain Web Front End(WFE) cluster from Power BI Service Architecture?
+
+Ans: The WFE cluster manages the initial connection and authentication to the Power BI service.
+     The Back-End cluster. Once authenticated, the Back-End handles all subsequent user interactions.
+
+3.Explain Back End cluster from Power BI Service Architecture?
+
+Ans: The Back-End cluster determines how authenticated clients interact with the Power BI service. The Back-End cluster manages visualizations, user dashboards, 
+     semantic models, reports, data storage, data connections, data refresh, and other aspects of interacting with the Power BI service.
+
+4.What ASP.NET component does in Power BI Service Architecture?
+
+Ans:embed a Power BI report in an ASP.NET 5 Core web app.
+
+5.Compare Microsoft Excel and PowerBi Desktop on the following features:
+a)Data import - Both PowerBIand Excel offers wide range of data sources from which data can be imported.
+b)Data Transformation - Both Excel and PowerBI offers same tools.
+c)Modeling - PowerBI is better than Excel.
+d)Reporting - PowerBI offers more options than Excel.
+e)Server Deployment - PowerBI is better than Excel.
+f)Convert Models - PowerBI offers more attractive modelling options than Excel
+g)Cost - PowerBI is free to use but 10$ to publish and share the reports whereas in Excelspend additional money to procure this and build dashboards.
+
+6.List 20 data sources supported by Power Bi desktop.
+
+Ans: 
+Excel
+Text/CSV
+XML
+JSON
+Oracle Database
+IBM DB2 Database
+MySQL Database
+PostgreSQL Database
+Sybase Database
+Teradata Database
+SAP HANA Database
+SAP Business Warehouse server
+Amazon Redshift
+Impala
+Google BigQuery (Beta)
+Azure SQL Database
+Salesforce Reports
+Google Analytics
+Facebook
+GitHub
+
+
