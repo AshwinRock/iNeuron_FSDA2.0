@@ -1,0 +1,32 @@
+1.List and explain different PowerBi products?
+
+Ans: Power BI + Enterprise data warehouse.
+     Power BI + ERP - enterprise resource planning 
+     Power BI + CRM - Customer relationship management 
+     Power BI + HRMS - Human Resource Management System
+     Power BI + IoT device management system.
+
+2.What limitations of Excel, Microsoft solved by PowerBi?
+
+Ans: Performance, Data Volume and Integration, Visualization and Reporting.
+
+3.Explain PowerQuery?
+
+Ans: Power Query is a data transformation and data preparation engine. Power Query comes with a graphical interface for getting data from sources and a 
+     Power Query Editor for applying transformations.
+
+4.Explain PowerMap?
+
+Ans: Power mapping is simply a way to identify who has power in the community, and to figure out what will move those individuals or institutions to do whatever 
+     it is you want them to do.
+
+5.How powerBi eliminated the need to host SharePoint Server on premises?
+
+Ans: Direct Integration, Data Refresh and Collaboration and sharing.
+
+6.Explain the updates done in Power Bi Service(power BI 2.0) as compared to older version ?
+
+Ans: 1. The format pane gets a makeover
+     2. Two new navigators: Page and bookmark navigators
+     3. New dashboard visual and new visuals available in the AppSource
+     4. New data connectors
