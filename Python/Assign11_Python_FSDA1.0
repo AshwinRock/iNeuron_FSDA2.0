@@ -1,0 +1,63 @@
+1.Create an assert statement that throws an AssertionError if the variable spam is a negative integer.
+
+Ans: assert spam >= 0, "spam should be a non-negative integer"
+
+2. Write an assert statement that triggers an AssertionError if the variables eggs and bacon contain
+strings that are the same as each other, even if their cases are different (that is, &#39;hello&#39; and &#39;hello&#39; are
+considered the same, and &#39;goodbye&#39; and &#39;GOODbye&#39; are also considered the same).
+
+Ans: assert eggs.lower() != bacon.lower(), "eggs and bacon should have different strings (case-insensitive)"
+
+3.Create an assert statement that throws an AssertionError every time.
+
+Ans: assert False, "This assert statement always triggers an AssertionError"
+
+4.What are the two lines that must be present in your software in order to call logging.debug()?
+
+Ans: import logging
+     logging.basicConfig(level=logging.DEBUG)
+
+5.What are the two lines that your program must have in order to have logging.debug() send a
+logging message to a file named programLog.txt?
+
+Ans: import logging
+     logging.basicConfig(filename='programLog.txt', level=logging.DEBUG)
+
+6.What are the five levels of logging?
+
+Ans: DEBUG,INFO,WARNING,ERROR,CRITICAL
+
+7.What line of code would you add to your software to disable all logging messages?
+
+Ans: import logging
+     logging.disable(logging.CRITICAL)
+
+8.Why is using logging messages better than using print() to display the same message?
+
+Ans: Granular Control:
+
+Logging provides granular control over the verbosity of messages through different log levels (DEBUG, INFO, WARNING, ERROR, CRITICAL). This allows you to control which messages are displayed during different stages of development or in different environments.
+
+Flexible Configuration:
+
+Logging allows you to configure where log messages are sent, such as to the console, files, or other destinations. This makes it easier to manage and analyze logs in different scenarios.
+
+Severity Levels:
+
+Logging messages have severity levels, providing a structured way to categorize and prioritize messages. This is particularly useful for identifying and addressing issues based on their severity.
+
+9.What are the differences between the Step Over, Step In, and Step Out buttons in the debugger?
+
+Ans: 
+Step Over: Move to the next line in the same function, skipping the details of function calls.
+Step In: Enter into the details of the function being called on the current line.
+Step Out: Finish executing the current function and return to the calling function.
+These buttons are essential for controlling the flow of execution during debugging, allowing developers to navigate through the code and inspect variables to identify and fix issues.
+
+10.After you click Continue, when will the debugger stop ?
+
+Ans: After the immediate breakpoint.
+
+11.What is the concept of a breakpoint?
+
+Ans: In software development, a breakpoint is an intentional stopping or pausing place in a program, put in place for debugging purposes. It is also sometimes simply referred to as a pause.
