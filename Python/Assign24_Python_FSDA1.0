@@ -1,0 +1,46 @@
+1.What is the relationship between def statements and lambda expressions ?
+
+Ans: def function_name(parameters):
+    return result
+
+Output:
+lambda parameters: expression
+
+2.What is the benefit of lambda?
+
+Ans: Lambda expressions in Python provide a concise and inline way to create anonymous functions. Their benefit lies in brevity and readability,
+making them suitable for short-lived, simple functions. They are often used in functional programming constructs like map,
+filter, and sorted where a function is needed temporarily.
+
+3.Compare and contrast map, filter, and reduce.
+
+Ans: map, filter, and reduce are higher-order functions in Python. map applies a function to each element of an iterable. 
+filter selects elements based on a function's condition.reduce aggregates elements using a function.
+They all support functional programming paradigms, promoting concise and expressive code.
+
+4.What are function annotations, and how are they used?
+
+Ans: Function annotations in Python are metadata added to function parameters and the return value using colons and expressions. 
+They provide additional information about the types or purpose of function elements. Annotations are optional, don't affect runtime behavior,
+and can be accessed using the __annotations__ attribute or tools like typing.
+
+5.What are recursive functions, and how are they used?
+
+Ans: 
+Recursive functions in programming are functions that call themselves, either directly or indirectly, to solve a problem by breaking it into smaller instances.
+They are used for tasks that can be divided into simpler subproblems, allowing concise and elegant solutions. 
+Recursion often simplifies code and enhances readability for certain algorithms.
+
+6.What are some general design guidelines for coding functions?
+
+Ans: When designing functions, prioritize clarity and simplicity. Use descriptive names, follow a consistent style, and adhere to the single
+responsibility principle. Aim for concise and modular functions. Provide clear documentation, handle errors gracefully, and favor readability
+over cleverness. Test thoroughly to ensure reliability and maintainability in the long term.
+
+7.Name three or more ways that functions can communicate results to a caller.
+
+Ans: Functions in Python communicate results to callers through return statements, modifying mutable arguments (like lists or dictionaries) in-place,
+and global variables. The return statement allows functions to provide explicit results, while in-place modifications and global variables affect
+external state, indirectly conveying information to the caller.
+
+
