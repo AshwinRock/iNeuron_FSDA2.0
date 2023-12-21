@@ -1,0 +1,69 @@
+1.In what modes should the PdfFileReader() and PdfFileWriter() File objects will be opened?
+
+Ans: The PdfFileReader() and PdfFileWriter() objects in PyPDF2, a Python library for working with PDF files, should have their corresponding File objects opened in binary mode ('rb' for reading and 'wb' for writing).
+This ensures proper handling of PDF file content, which may include binary data.
+
+2.From a PdfFileReader object, how do you get a Page object for page 5?
+
+Ans: from PyPDF2 import PdfFileReader
+     page_number = 4  # Page 5 corresponds to index 4 (zero-based)
+     page_object = pdf_reader.getPage(page_number)
+
+3.What PdfFileReader variable stores the number of pages in the PDF document?
+
+Ans: 
+In Python's PyPDF2 library, the numPages attribute of a PdfFileReader variable stores the number of pages in a PDF document.
+It allows you to retrieve the total page count of the PDF file being processed.
+
+4.If a PdfFileReader object’s PDF is encrypted with the password swordfish, what must you do before you can obtain Page objects from it?
+
+Ans: To obtain Page objects from a PdfFileReader encrypted with the password "swordfish," you must use the decrypt('swordfish') method on the PdfFileReader object before accessing its pages.
+ This decrypts the PDF with the specified password, allowing you to read and manipulate its content securely.
+
+5.What methods do you use to rotate a page?
+
+Ans: To rotate a page, use a graphic editing software like Adobe Acrobat or Microsoft Word. In Adobe Acrobat, go to "Organize Pages" > "Rotate."
+In Microsoft Word, select the page, go to "Layout" > "Orientation," and choose the desired rotation. Save or apply changes to complete the rotation.
+
+6.What is the difference between a Run object and a Paragraph object?
+
+Ans: 
+In the context of document processing, a Run object refers to a continuous sequence of characters with the same formatting within a paragraph.
+A Paragraph object, on the other hand, represents a distinct block of text with its own formatting and attributes.
+Paragraphs can contain multiple runs with different styles.
+
+7.How do you obtain a list of Paragraph objects for a Document object that’s stored in a variable named doc?
+
+Ans: To obtain a list of Paragraph objects from a Document object stored in the variable named doc, you can use the appropriate method or attribute
+provided by the specific document processing library or framework you're using. This typically involves accessing the paragraphs property or using 
+a dedicated method for retrieving paragraphs.
+
+8.What type of object has bold, underline, italic, strike, and outline variables?
+
+Ans: 
+An object that has bold, underline, italic, strike, and outline variables is likely a text formatting object in a software or programming context.
+These variables represent styling options for text, allowing customization of its appearance, including boldness, underlining, italics, striking through,
+and outlining for enhanced visual presentation.
+
+9.What is the difference between False, True, and None for the bold variable?
+
+Ans: 
+False and True are Boolean values representing logical conditions of false and true, respectively. None is a special value in Python indicating the
+absence of a value or a null value. All three are used in different contexts to convey specific meanings in programming.
+
+10.How do you create a Document object for a new Word document?
+
+Ans:To create a Document object for a new Word document in programming, use the relevant API or library, such as Microsoft Word's Interop in C#.
+Instantiate a Document object, open or create a new document, and manipulate its content programmatically, allowing for dynamic document generation 
+and customization in your application.
+
+11.How do you add a paragraph with the text 'Hello, there!'to a Document object stored in a variable named doc?
+
+Ans: To add a paragraph with the text 'Hello, there!' to a Document object named doc, use the appropriate method for the specific programming language or library.
+For example, in Python with the python-docx library, you can use doc.add_paragraph('Hello, there!') to achieve this.
+
+12.What integers represent the levels of headings available in Word documents?
+
+Ans: 
+In Word documents, integer values represent heading levels for formatting. Heading 1 is represented by the integer 1, Heading 2 by 2, and so on.
+These integers are used to organize and structure the document, aiding in navigation, table of contents, and consistent formatting across different sections.
