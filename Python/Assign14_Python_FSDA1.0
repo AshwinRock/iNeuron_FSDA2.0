@@ -1,0 +1,43 @@
+1.What does RGBA stand for?
+
+Ans: RGBA stands for Red, Green, Blue, and Alpha. It is a color model used to represent digital images, specifying the intensity of these three color channels
+along with the alpha channel, which represents transparency. The alpha channel determines the pixel's level of opacity, allowing for various levels of translucency.
+
+2.From the Pillow module, how do you get the RGBA value of any images?
+
+Ans: To get the RGBA values of an image using the Pillow module in Python, you can use the getpixel method.
+Example: rgba_value = Image.open("example.jpg").getpixel((x, y)). Replace "example.jpg" with your image file and (x, y) with the pixel coordinates.
+The variable rgba_value will contain the RGBA values.
+
+3.What is a box tuple, and how does it work?
+
+Ans: A "box tuple" is not a standard term in computer science or programming. It might be a specific concept or technology introduced after my last update in January 2022.
+Without further context, I cannot provide specific information about its meaning or functionality.
+
+4.Use your image and load in notebook then, How can you find out the width and height of an Image object?
+
+Ans: To determine the width and height of an Image object in a programming context, access the attributes or methods specific to the image library being used.
+Commonly, you'll find properties like width and height or methods like size() providing the dimensions. Check the documentation for the specific library for details.
+
+5.What method would you call to get Image object for a 100×100 image, excluding the lower-left quarter of it?
+
+Ans: from PIL import Image
+img = Image.new('RGB', (100, 100))
+cropped_img = img.crop((0, 0, 50, 50))
+
+6.After making changes to an Image object, how could you save it as an image file?
+
+Ans: To save changes made to an Image object, use the appropriate method provided by the image processing library you're using, such as PIL (Python Imaging Library).
+For example, in PIL, you can use the save method to save the modified Image object to a file with a specified format and filename.
+
+7.What module contains Pillow’s shape-drawing code?
+
+Ans: Pillow's shape-drawing code is found in the "ImageDraw" module. This module provides a drawing interface for creating and manipulating images.
+It allows users to draw various shapes, lines, and text on images, providing a versatile set of tools
+for image processing and graphical applications within the Pillow library.
+
+8.Image objects do not have drawing methods. What kind of object does? How do you get this kind of object?
+
+Ans: Graphic objects, like those in graphical user interfaces or game development, have drawing methods. In these contexts, you work with classes or libraries
+that provide graphical functionality. For example, in Python, the Pygame library offers a Surface object with drawing methods. 
+Access such objects through the relevant library or framework.
