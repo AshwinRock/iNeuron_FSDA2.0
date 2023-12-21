@@ -3,8 +3,8 @@
 Ans: assert spam >= 0, "spam should be a non-negative integer"
 
 2. Write an assert statement that triggers an AssertionError if the variables eggs and bacon contain
-strings that are the same as each other, even if their cases are different (that is, &#39;hello&#39; and &#39;hello&#39; are
-considered the same, and &#39;goodbye&#39; and &#39;GOODbye&#39; are also considered the same).
+strings that are the same as each other, even if their cases are different (that is, 'hello' and 'hello' are
+considered the same, and 'goodbye' and 'GOODbye' are also considered the same).
 
 Ans: assert eggs.lower() != bacon.lower(), "eggs and bacon should have different strings (case-insensitive)"
 
