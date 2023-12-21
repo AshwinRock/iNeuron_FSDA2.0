@@ -1,0 +1,32 @@
+1.What is the difference between enclosing a list comprehension in square brackets and
+parentheses?
+
+Ans: Enclosing a list comprehension in square brackets ([...]) creates a list, while enclosing it in parentheses ((...)), in the context of a generator expression,
+creates a generator object. Lists are eager, storing all elements in memory, while generators are lazy, yielding elements on demand, conserving memory.
+
+2.What is the relationship between generators and iterators?
+
+Ans: Generators are a type of iterator in Python. While all generators are iterators, not all iterators are generators. Generators use the yield statement to produce
+values lazily, allowing efficient memory usage. Iterators are more general and can be created using classes implementing the __iter__ and __next__ methods.
+
+3.What are the signs that a function is a generator function?
+
+Ans: A function is a generator function if it contains the yield keyword. The presence of yield indicates that the function will produce a sequence of values
+lazily and can be paused and resumed. Generator functions use memory efficiently and are suitable for generating large or infinite sequences.
+
+4.What is the purpose of a yield statement?
+
+Ans: 
+The yield statement in Python is used in generator functions to produce a sequence of values over multiple calls without keeping the entire sequence in memory.
+It pauses the function's execution, allowing the generator to produce values lazily and efficiently, enhancing memory usage and enabling iterative processing.
+
+5.What is the relationship between map calls and list comprehensions? Make a comparison and
+contrast between the two.
+
+Ans: Both map calls and list comprehensions in Python are used to transform or process iterable elements. map applies a function to each element in an iterable,
+creating a new iterable. List comprehensions provide a concise and readable way to generate lists by specifying the transformation and condition directly.
+
+
+
+
+
