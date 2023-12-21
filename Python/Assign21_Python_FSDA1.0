@@ -1,0 +1,99 @@
+1.Add the current date to the text file today.txt as a string.
+
+Ans: from datetime import date
+current_date = str(date.today())
+with open('today.txt', 'w') as file:
+    file.write(current_date)
+print("Current date has been added to today.txt.")
+
+2.Read the text file today.txt into the string today_string.
+
+Ans: 
+with open('today.txt', 'r') as file:
+    today_string = file.read()
+
+print("Content of today.txt:", today_string)
+
+3.Parse the date from today_string.
+
+Ans: from datetime import datetime
+today_string = "2023-12-21"  # Replace this with the actual content of today.txt
+parsed_date = datetime.strptime(today_string, '%Y-%m-%d').date()
+print("Parsed Date:", parsed_date)
+
+4.List the files in your current directory.
+
+Ans: import os
+current_directory = os.getcwd()
+files = os.listdir(current_directory)
+print("Files in the current directory:")
+for file in files:
+    print(file)
+
+5.Create a list of all of the files in your parent directory (minimum five files should be available).\
+
+Ans: import os
+parent_directory = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
+parent_files = os.listdir(parent_directory)
+print("Files in the parent directory:")
+for file in parent_files:
+    print(file)
+
+6.Use multiprocessing to create three separate processes. Make each one wait a random number of
+seconds between one and five, print the current time, and then exit.
+
+Ans: import multiprocessing
+import time
+import random
+from datetime import datetime
+
+def worker():
+    sleep_duration = random.uniform(1, 5)
+
+    # Wait for the random duration
+    time.sleep(sleep_duration)
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"Process {multiprocessing.current_process().name}: {current_time}")
+
+if __name__ == "__main__":
+    processes = []
+    for i in range(3):
+        process = multiprocessing.Process(target=worker, name=f"Worker-{i+1}")
+        processes.append(process)
+        process.start()
+
+    for process in processes:
+        process.join()
+
+    print("All processes have finished.")
+
+7.Create a date object of your day of birth.
+
+Ans: from datetime import date
+
+birth_year = 1990
+birth_month = 1
+birth_day = 1
+birth_date = date(birth_year, birth_month, birth_day)
+print("Date of Birth:", birth_date)
+
+8.What day of the week was your day of birth?
+
+Ans: from datetime import datetime
+birth_year = 1990
+birth_month = 1
+birth_day = 1
+birth_datetime = datetime(birth_year, birth_month, birth_day)
+day_of_week = birth_datetime.strftime("%A")
+print("Day of the Week for your Day of Birth:", day_of_week)
+
+9.When will you be (or when were you) 10,000 days old?
+
+Ans: from datetime import datetime, timedelta
+birth_year = 1990
+birth_month = 1
+birth_day = 1
+days_old = 10000
+birth_date = datetime(birth_year, birth_month, birth_day)
+target_date = birth_date + timedelta(days=days_old)
+print("Date when you will be 10,000 days old:", target_date.strftime("%Y-%m-%d"))
