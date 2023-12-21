@@ -1,0 +1,38 @@
+1.What advantages do Excel spreadsheets have over CSV spreadsheets?
+
+Ans: Excel spreadsheets offer advantages over CSV (Comma-Separated Values) files due to their ability to store multiple sheets, cell formatting, formulas, and charts.
+Excel provides a richer feature set, facilitating complex data analysis and visualization, making it suitable for diverse tasks beyond simple
+data storage and exchange compared to plain text-based CSV files.
+
+2.What do you pass to csv.reader() and csv.writer() to create reader and writer objects?
+
+Ans: 
+To create a reader object using csv.reader(), pass a readable file object or an iterable of strings containing CSV data. 
+For a writer object using csv.writer(), pass a writable file object or a stream to which the CSV data will be written.
+
+3.What modes do File objects for reader and writer objects need to be opened in?
+
+Ans: For reading, a File object needs to be opened in 'r' mode to enable read operations. For writing, it should be opened in 'w' mode to enable write operations,
+truncating the file if it exists. To append data without truncating, use 'a' mode. Combining modes, like 'r+' or 'w+', allows both reading and writing.
+
+4.What method takes a list argument and writes it to a CSV file?
+
+Ans: The csv.writer() method in Python takes a list argument and writes it to a CSV (Comma-Separated Values) file. It creates a CSV writer object that can be
+used to write rows from the list to the file, ensuring proper formatting with commas as separators between values in the CSV file.
+
+5.What do the keyword arguments delimiter and line terminator do?
+
+Ans: The "delimiter" in programming refers to a character or sequence used to separate values in a data structure, such as a CSV file. 
+The "line terminator" signifies the end of a line. These keyword arguments are often used in file handling functions to define how data is structured or separated.
+
+6.What function takes a string of JSON data and returns a Python data structure?
+
+Ans: The json.loads() function in Python takes a string containing JSON data as input and returns the corresponding Python data structure. It parses the
+JSON-formatted string and converts it into a native Python object, such as a dictionary or a list, making it accessible
+and manipulable within the Python environment.
+
+7.What function takes a Python data structure and returns a string of JSON data?
+
+Ans: The json.dumps() function in Python takes a data structure, such as a dictionary or list, and converts it into a JSON-formatted string.
+It serializes the data, ensuring compatibility with JSON syntax, allowing easy storage, transmission,
+or interchange of information between different systems and programming languages.
